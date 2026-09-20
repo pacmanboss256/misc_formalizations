@@ -254,7 +254,6 @@ f ∈ solution_set ↔ (∀m n:ℕ+, (f m)^2 + (f n) ∣ (m^2 + n)^2) := by
     norm_cast at hpg
     have hs : N ^ 2 < f N ^ 2 := by
       apply Nat.pow_lt_pow_left
-      · simp
         assumption
       decide
     have hpn : ∃ p:ℕ+, ((f N) ^ 2 - N ^ 2) ^ 2 + 1 ≤ p ∧ PNat.Prime p := by

@@ -1,23 +1,23 @@
-name = "imc_formalizations"
+name = "formalizedProblems"
 version = "0.1.0"
 keywords = ["math"]
-defaultTargets = ["ImcFormalizations"]
+defaultTargets = ["formalizedProblems","ProblemExtraction"]
 
 [leanOptions]
 pp.unicode.fun = true
 autoImplicit = false
 relaxedAutoImplicit = false
-weak.linter.style.multiGoal = true
 weak.linter.style.cdot = true
-weak.linter.tacticAnalysis.tryAtEachStepFromEnv = true
+
 
 [[require]]
+
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4"
-rev = "v4.32.0"
+rev = "v4.34.0"
 
 [[lean_lib]]
-name = "ImcFormalizations"
+name = "formalizedProblems"
 
 [[lean_lib]]
 name = "ProblemExtraction"
